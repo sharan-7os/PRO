@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="icon" href="sih.jpeg">
+    <title>TICKETMATE</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-image: url('wall.jpg');
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            color: white;
+        }
+
+        .logpage {
+            backdrop-filter: blur(1px);
+            background-color: rgba(255, 255, 255, 0.2);
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 400px;
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 30px;
+            color: rgb(26, 24, 24);
+        }
+
+        .input-box {
+            position: relative;
+            margin-bottom: 25px;
+        }
+
+        .input-box input {
+            width: 100%;
+            padding: 12px 45px; /* Padding for both icons */
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            outline: none;
+            box-sizing: border-box;
+            transition: border 0.3s;
+            font-size: 16px;
+            backdrop-filter: blur(5px);
+            color: grey;
+            background-color: rgba(255, 255, 255, 0.5);
+        }
+
+        .input-box input:focus {
+            border-color: #007bff;
+        }
+
+        .input-box i {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            color: #aaa;
+            pointer-events: none; /* Prevent the icon from capturing mouse events */
+        }
+
+        .input-box i:first-child {
+            left: 12px; /* Position the user icon */
+        }
+
+        .input-box i:nth-child(2) {
+            left: 12px; /* Position the lock icon */
+        }
+
+        .input-box i:last-child {
+            right: 12px; /* Position the eye icon */
+            cursor: pointer; /* Change cursor to pointer for the eye icon */
+        }
+
+        .remember-forget {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 25px;
+        }
+
+        .remember-forget label {
+            font-size: 14px;
+        }
+
+        .btn {
+            width: 100%;
+            padding: 12px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background 0.3s;
+            font-size: 16px;
+        }
+
+        .btn:hover {
+            background-color: rgb(72, 72, 248);
+        }
+
+        .btn:active {
+            background-color: rgb(2, 67, 246);
+        }
+
+        .register-link {
+            text-align: center;
+        }
+
+        .register-link p {
+            margin: 15px 0 0;
+        }
+
+        .register-link a {
+            color: #007bff;
+            text-decoration: none;
+        }
+
+        .register-link a:hover {
+            text-decoration: underline;
+        }
+
+        .reg {
+            padding-left: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="logpage">
+        <form action="">
+            <h1>LOGIN</h1>
+            <div class="input-box">
+                <input type="text" placeholder="USERNAME" required>
+                <i class='bx bxs-user'></i>
+            </div>
+            <div class="input-box">
+                <input type="password" id="password" placeholder="PASSWORD" required>
+                <i class='bx bxs-lock-alt'></i>
+                <i class='bx bx-show toggle-password' id="togglePassword"></i>
+            </div>
+            <div class="remember-forget">
+                <label><input type="checkbox">Remember me</label>
+                <a href="#">FORGET PASSWORD</a>
+            </div>
+            <button type="submit" class="btn">LOGIN</button>
+            <div class="register-link">
+                <p>Don't have an account?<a class="reg" style="color:rgb(0, 0, 0);" href="create.html">REGISTER</a></p>
+            </div>
+        </form> 
+    </div>
+
+   
+</body>
+</html>
